@@ -230,10 +230,10 @@ apache:
         - rewrite
     vhosts:
         av_eh5v66prqxfo:
-            servername: fictional-university.test
+            servername: kiosbeta.com
             serveraliases:
-                - www.fictional-university.test
-            docroot: /var/www/fictional-university/app
+                - www.kiosbeta.com
+            docroot: /var/www/kiosbeta
             port: '80'
             setenvif:
                 - 'Authorization "(.*)" HTTP_AUTHORIZATION=$1'
@@ -247,7 +247,7 @@ apache:
             ssl_cipher: ''
             directories:
                 avd_r8x39n4643db:
-                    path: /var/www/fictional-university/app
+                    path: /var/www/kiosbeta
                     directoryindex: 'index.php app.dev'
                     options:
                         - Indexes
@@ -361,19 +361,19 @@ mariadb:
     install: '1'
     settings:
         version: '10.1'
-        root_password: '123'
+        root_password: 'Kiosbeta!@3'
         override_options: {  }
     users:
         mariadbnu_l2t9ivkylfmy:
-            name: dbuser
-            password: '123'
+            name: kiosbeta
+            password: 'Kiosbeta!@3'
     databases:
         mariadbnd_85ub98v5gk36:
-            name: dbname
+            name: kiosbeta
             sql: ''
     grants:
         mariadbng_63d7zym58asz:
-            user: dbuser
+            user: kiosbeta
             table: '*.*'
             privileges:
                 - ALL
@@ -381,19 +381,19 @@ mysql:
     install: '0'
     settings:
         version: '5.7'
-        root_password: '123'
+        root_password: 'Kiosbeta!@3'
         override_options: {  }
     users:
         mysqlnu_oareyf7xjrg4:
-            name: dbuser
-            password: '123'
+            name: kiosbeta
+            password: 'Kiosbeta!@3'
     databases:
         mysqlnd_qixeahumvjrc:
-            name: dbname
+            name: kiosbeta
             sql: ''
     grants:
         mysqlng_czn4kym62xlm:
-            user: dbuser
+            user: kiosbeta
             table: '*.*'
             privileges:
                 - ALL
@@ -404,7 +404,7 @@ postgresql:
             encoding: UTF8
             version: '9.6'
         server:
-            postgres_password: '123'
+            postgres_password: 'Kiosbeta!@3'
     databases: {  }
     users: {  }
     grants: {  }
